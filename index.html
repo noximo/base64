@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://base64.help/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base64 Decoding: Converting Encoded Data into Readable Text Online</title>
+    <meta name="description" content="Use this easy online tool to decode Base64 string. Learn about the process of Base64 decoding, its applications, and how it helps convert encoded data into readable text. Discover how Base64 decoding is used in various domains, including data transmission, email attachments, and encryption key exchange.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="content">
+    <h1>
+        Base 64 Decode Online
+    </h1>
+    <h2>Decode string encoded in Base64</h2>
+    <div class="bubble ">
+        <textarea id="input" placeholder="Paste encoded string here"></textarea>
+        <textarea id="output" placeholder="Get decoded text here"></textarea>
+    </div>
+
+
+    <section class="bubble text">
+        <a href="/">Decode Base64 string into readable text</a>
+        <a href="/encode.html">Encode text into Base64</a>
+        <a href="/image-decode.html">Decode image from Base64 encoding</a>
+        <a href="/image-encode.html">Encode image to Base64 encoding</a>
+    </section>
+    <div class="bubble text">
+        <h2>Base64 Decoding: Converting Encoded Data into Readable Text</h2>
+        <p>
+            Discover the power of Base64 decoding, a process that converts encoded data into readable text. Base64 decoding plays a vital role in various domains, facilitating the secure transmission and storage of binary information.
+        </p>
+        <p>
+            Base64 encoding converts binary data into a text format using a set of 64 characters. When data is encoded, it appears as a sequence of characters that can be easily transmitted or stored as a string.
+        </p>
+        <p>
+            By reversing the encoding process, Base64 decoding retrieves the original binary representation, making it accessible as text or binary data.
+        </p>
+        <p>
+            Base64 decoding finds wide applications in data transmission, ensuring safe transfer of binary data over text-based channels. It is commonly used in protocols like HTTP, where data is encoded on the sender's side and decoded on the recipient's side.
+        </p>
+        <p>
+            Email attachments rely on Base64 encoding to transmit binary files, such as images or documents, through email systems that may not support direct binary transmission. The Base64-encoded data is embedded within the email and decoded upon receipt.
+        </p>
+        <p>
+            Base64 decoding aids in data storage within databases that lack native binary support. It allows binary data to be stored as strings, maintaining integrity and structure during storage and retrieval.
+        </p>
+        <p>
+            Encryption key exchange often employs Base64 decoding. Encryption keys are Base64 encoded before transmission or storage to ensure compatibility with text-based systems. They are decoded to restore the original binary representation during cryptographic operations.
+        </p>
+        <p>
+            Base64 decoding facilitates file format conversion by encoding files, like images, in Base64 and embedding them directly into HTML documents. This eliminates the need for separate files and simplifies content transfer.
+        </p>
+        <p>
+            In APIs, Base64 encoding represents binary data within JSON or XML payloads. This enables seamless communication between different software systems by including binary data as string values in the data structure.
+        </p>
+        <p>
+            Base64 decoding is a versatile process, enabling the conversion of encoded data into readable text or binary representation. Its applications extend to data transmission, email attachments, encryption key exchange, file format conversion, and APIs. Gain proficiency in Base64 decoding to work efficiently and securely with encoded data in various domains.
+        </p>
+    </div>
+
+
+    <footer>
+        <section class="bubble text">
+            <h3>Do you need help calculating percentage?</h3>
+            <p>Maybe you want to calculate</p>
+            <a href="https://online-percentages.help/">X percent out of Y is how much? (X% out of Y is ?)</a>
+            <a href="https://online-percentages.help/value-plus-percentage.html">Value plus X percent is how much? (Y + X% is ?)</a>
+            <a href="https://online-percentages.help/value-minus-percentage.html">Value minus X percent is how much? (Y - X% is ?)</a>
+            <a href="https://online-percentages.help/difference.html">Difference between two numbers is how much percent? (e.g. population of two different cities)</a>
+            <a href="https://online-percentages.help/change.html">Change from initial number to final number is how much percent? (e.g. change in population of a single city)</a>
+        </section>
+    </footer>
+</section>
+
+<script defer>
+    function process() {
+        const input = document.getElementById("input").value;
+
+        let output = document.getElementById("output");
+        try {
+            output.value = atob(input);
+            output.style.background = '';
+        } catch (e) {
+            output.value = "Incorrect Base64 string";
+            output.style.background = 'red';
+
+        }
+
+    }
+
+    document.getElementById("input").addEventListener("input", function () {
+        this.style.height = 0;
+        this.style.height = (this.scrollHeight) + "px";
+        process();
+    });
+</script>
+<script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4779620150755845" crossorigin="anonymous"></script>
+</body>
+</html>

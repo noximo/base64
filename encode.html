@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://base64.help/encode.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base64 Encoding: Converting Readable Text Into Base64 Encoded String Online</title>
+    <meta name="description" content="Use this online tool to encode Base64 string. Learn about the process of Base64 encoding, its applications, and how it helps convert encoded data into readable text. Discover how Base64 decoding is used in various domains, including data transmission, email attachments, and encryption key exchange.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="content">
+    <h1>
+        Base 64 Decode Online
+    </h1>
+    <h2>Decode string encoded in Base64</h2>
+    <div class="bubble ">
+        <textarea id="input" placeholder="Paste text here"></textarea>
+        <textarea id="output" placeholder="Get encoded Base64 string here"></textarea>
+    </div>
+
+
+    <section class="bubble text">
+        <a href="/">Decode Base64 string into readable text</a>
+        <a href="/encode.html">Encode text into Base64</a>
+        <a href="/image-decode.html">Decode image from Base64 encoding</a>
+        <a href="/image-encode.html">Encode image to Base64 encoding</a>
+    </section>
+    <div class="bubble text">
+        <h2>Base64 Encoding: Converting Text into Encoded Data</h2>
+        <p>
+            Are you interested in understanding Base64 encoding and its practical applications? Base64 encoding is a crucial process that converts text into encoded data, enabling the secure transmission and storage of information across various systems and protocols.
+        </p>
+        <p>
+            Base64 encoding involves representing binary data using a set of 64 characters. The original data is divided into chunks of 3 bytes, each consisting of 8 bits. These chunks are then converted into 4 groups of 6 bits, which are mapped to specific Base64 characters.
+        </p>
+        <p>
+            The resulting Base64-encoded data appears as a sequence of characters, making it suitable for transmission or storage as a string. This encoding process ensures that the data remains intact and compatible with text-based systems.
+        </p>
+        <p>
+            Base64 encoding finds numerous applications in different domains. In data transmission, Base64 encoding allows binary data to be sent over text-based channels securely. By encoding the data on the sender's side and decoding it on the recipient's side, compatibility and integrity are preserved, enabling safe transmission through protocols like HTTP.
+        </p>
+        <p>
+            Email attachments often utilize Base64 encoding to ensure the successful transmission of binary files, such as images or documents, through email systems that may not support direct binary transmission. The files are converted into Base64-encoded data, which is then embedded within the email. Upon receipt, the data is decoded to retrieve the original file.
+        </p>
+        <p>
+            Encryption systems often rely on Base64 encoding to represent sensitive data like encryption keys. Before transmission or storage, these keys are encoded using Base64, ensuring compatibility with text-based systems. The keys can be easily decoded when needed, restoring their original binary representation for cryptographic operations.
+        </p>
+        <p>
+            Base64 encoding is also useful for file format conversion. By encoding files, such as images, into Base64 and embedding them directly into HTML or XML documents, separate file dependencies are eliminated, simplifying the transfer of content between different systems.
+        </p>
+        <p>
+            In summary, Base64 encoding is a vital process that converts text into encoded data, allowing for secure transmission, storage, and interoperability. Its applications encompass data transmission, email attachments, encryption, and file format conversion. Understanding Base64 encoding empowers you to work efficiently with encoded data across diverse domains.
+        </p>
+    </div>
+
+
+    <footer>
+        <section class="bubble text">
+            <h3>Do you need help calculating percentage?</h3>
+            <p>Maybe you want to calculate</p>
+            <a href="https://online-percentages.help/">X percent out of Y is how much? (X% out of Y is ?)</a>
+            <a href="https://online-percentages.help/value-plus-percentage.html">Value plus X percent is how much? (Y + X% is ?)</a>
+            <a href="https://online-percentages.help/value-minus-percentage.html">Value minus X percent is how much? (Y - X% is ?)</a>
+            <a href="https://online-percentages.help/difference.html">Difference between two numbers is how much percent? (e.g. population of two different cities)</a>
+            <a href="https://online-percentages.help/change.html">Change from initial number to final number is how much percent? (e.g. change in population of a single city)</a>
+        </section>
+    </footer>
+</section>
+
+<script defer>
+    function process() {
+        const input = document.getElementById("input").value;
+
+        let output = document.getElementById("output");
+        try {
+            output.value = btoa(input);
+            output.style.background = '';
+        } catch (e) {
+            output.value = "Incorrect Base64 string";
+            output.style.background = 'red';
+
+        }
+
+    }
+
+    document.getElementById("input").addEventListener("input", function () {
+        this.style.height = 0;
+        this.style.height = (this.scrollHeight) + "px";
+        process();
+    });
+</script>
+<script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4779620150755845" crossorigin="anonymous"></script>
+</body>
+</html>

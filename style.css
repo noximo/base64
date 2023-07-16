@@ -1,0 +1,96 @@
+body {
+    color: rgb(203, 213, 225);
+    background: #0f172a;
+    font-family: sans-serif;
+}
+
+a {
+    color: rgb(203, 213, 225);
+    display: table;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-bottom: 1px dashed rgb(203, 213, 225);
+}
+
+a:hover {
+    border-bottom: 1px solid rgb(203, 213, 225);
+}
+
+a:visited {
+    color: rgb(203, 213, 225);
+}
+
+a.inlineLink {
+    display: inline-block;
+}
+
+#content {
+    text-align: center;
+}
+
+.input {
+    color: rgb(203, 213, 225);
+    background: #1e293b;
+    border: 0;
+    border-bottom: 1px solid gray;
+    min-width: 40%;
+    width: 40%;
+    font-size: x-large;
+}
+
+#queryLine {
+    font-size: x-large;
+}
+
+#result {
+    font-size: xxx-large;
+}
+
+.bubble {
+    background: #1e293b;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.text {
+    text-align: justify;
+}
+
+.text li {
+    margin-top: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 95%;
+    height: 3rem;
+    font-family: monospace;
+    font-size: larger;
+    min-height: 3rem;
+    max-height: 15rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+}
+
+.flex-items {
+    display: block;
+    width: 45%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
